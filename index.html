@@ -3,10 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#0b1220">
+<meta name="theme-color" content="#0f172a">
 
-<title>Writing Work From Home | Assignment Information</title>
-<meta name="description" content="Explore handwriting assignment work, application steps, project requirements and payment terms. Review all details before applying.">
+<title>Certified Writing Work From Home | Earn Daily</title>
+<meta name="description" content="Join genuine handwriting & typing work from home. Flexible hours, verified payouts, and direct onboarding via Telegram.">
 
 <!-- Meta Pixel Code -->
 <script>
@@ -32,212 +32,345 @@ alt="">
 <!-- End Meta Pixel Code -->
 
 <style>
+:root {
+  --bg-color: #090d16;
+  --card-bg: #131c31;
+  --accent: #10b981;
+  --accent-glow: rgba(16, 185, 129, 0.4);
+  --text-main: #f8fafc;
+  --text-sub: #94a3b8;
+  --primary-btn: #0088cc;
+  --primary-btn-hover: #0077b3;
+}
+
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{
   margin:0;
-  font-family:Arial,Helvetica,sans-serif;
-  background:#0b1220;
-  color:#f8fafc;
-  line-height:1.65
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  background: var(--bg-color);
+  color: var(--text-main);
+  line-height: 1.7;
 }
+
+/* Header */
 header{
-  padding:17px 20px;
-  background:#101b30;
-  border-bottom:1px solid #26364e
+  background: rgba(15, 23, 42, 0.9);
+  backdrop-filter: blur(10px);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 1px solid #1e293b;
+  padding: 14px 20px;
 }
 .nav{
-  max-width:960px;
-  margin:auto;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:12px
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.brand{font-size:19px;font-weight:800;color:#a7f3d0}
-.tag{font-size:12px;color:#cbd5e1}
-main{max-width:850px;margin:auto;padding:30px 17px 45px}
-.hero{
-  padding:30px 23px;
-  border:1px solid #2c4059;
-  border-radius:22px;
-  background:linear-gradient(145deg,#172740,#101827);
-  box-shadow:0 16px 40px #0002
+.brand{
+  font-size: 20px;
+  font-weight: 800;
+  color: #34d399;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
-.eyebrow{
-  display:inline-block;
-  padding:6px 11px;
-  border-radius:20px;
-  background:#183b36;
-  color:#a7f3d0;
-  font-size:11px;
-  font-weight:700;
-  letter-spacing:.6px
+.badge-live {
+  background: rgba(16, 185, 129, 0.2);
+  color: #34d399;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 700;
+  border: 1px solid rgba(16, 185, 129, 0.4);
 }
-h1{font-size:clamp(30px,7vw,47px);line-height:1.15;margin:19px 0 13px}
-h1 span{color:#6ee7b7}
-p{color:#cbd5e1}
-.hero p{font-size:16px}
-.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
-.btn{
-  display:inline-flex;
-  justify-content:center;
-  align-items:center;
-  padding:13px 18px;
-  min-height:48px;
-  border-radius:11px;
-  background:#229ed9;
-  color:white;
-  text-decoration:none;
-  font-weight:700;
-  border:1px solid #4db7e7;
-  flex:1 1 200px;
-  text-align:center
+
+/* Main Container */
+main{
+  max-width: 900px;
+  margin: auto;
+  padding: 30px 16px 50px;
 }
-.btn.secondary{background:#17243b;border-color:#42536d}
-.section-title{font-size:25px;margin:30px 0 12px}
-.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
-.card{
-  padding:19px;
-  background:#121e32;
-  border:1px solid #2a3b54;
-  border-radius:16px
+
+/* Hero Section */
+.hero {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 30px;
+  align-items: center;
+  background: linear-gradient(135deg, #111c33 0%, #0d1526 100%);
+  border: 1px solid #1f314f;
+  border-radius: 24px;
+  padding: 40px 30px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+  position: relative;
+  overflow: hidden;
 }
-.card h3{margin:0 0 7px;font-size:18px}
-.card p{margin:0;font-size:14px}
-.number{color:#6ee7b7;font-weight:800;font-size:13px}
-ul,ol{padding-left:22px;color:#dbe5f1}
-li{margin:9px 0}
-.notice{
-  margin-top:20px;
-  padding:16px;
-  background:#24251f;
-  border:1px solid #5b5030;
-  border-radius:12px;
-  color:#f5e8b8;
-  font-size:13px
+.hero-content h1 {
+  font-size: clamp(28px, 5vw, 42px);
+  line-height: 1.2;
+  margin: 10px 0 16px;
+  font-weight: 800;
 }
-.faq{padding:16px 0;border-bottom:1px solid #2a3b54}
-.faq h3{font-size:16px;margin:0 0 5px}
-.faq p{font-size:14px;margin:0}
-footer{
-  text-align:center;
-  padding:25px 17px;
-  border-top:1px solid #26364e;
-  color:#94a3b8;
-  font-size:12px
+.hero-content h1 span {
+  color: #34d399;
 }
-@media(max-width:560px){
-  .grid{grid-template-columns:1fr}
-  .hero{padding:23px 17px}
-  main{padding:22px 13px 35px}
-  .section-title{font-size:22px}
+.hero-content p {
+  color: var(--text-sub);
+  font-size: 15px;
+  margin-bottom: 25px;
+}
+.profile-container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.profile-img {
+  width: 100%;
+  max-width: 280px;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 20px;
+  border: 2px solid #34d399;
+  box-shadow: 0 10px 30px rgba(16, 185, 129, 0.2);
+}
+
+/* Boosted Action Buttons */
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.btn-telegram {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background: linear-gradient(135deg, #0088cc, #00a2ff);
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 17px;
+  padding: 16px 24px;
+  border-radius: 14px;
+  box-shadow: 0 0 25px rgba(0, 136, 204, 0.5);
+  border: 1px solid #33b5ff;
+  transition: all 0.3s ease;
+  animation: pulse-glow 2s infinite;
+  text-align: center;
+}
+.btn-telegram:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 35px rgba(0, 136, 204, 0.8);
+}
+
+@keyframes pulse-glow {
+  0% { box-shadow: 0 0 15px rgba(0, 136, 204, 0.4); }
+  50% { box-shadow: 0 0 30px rgba(0, 136, 204, 0.8); }
+  100% { box-shadow: 0 0 15px rgba(0, 136, 204, 0.4); }
+}
+
+/* Sections & Grid */
+.section-title {
+  font-size: 24px;
+  margin: 40px 0 20px;
+  font-weight: 700;
+  text-align: center;
+}
+.section-title span {
+  color: #34d399;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+.card {
+  background: var(--card-bg);
+  border: 1px solid #1e293b;
+  border-radius: 16px;
+  padding: 22px;
+  transition: transform 0.2s;
+}
+.card:hover {
+  border-color: #34d399;
+}
+.card h3 {
+  margin: 0 0 8px;
+  font-size: 17px;
+  color: #f1f5f9;
+}
+.card p {
+  margin: 0;
+  color: var(--text-sub);
+  font-size: 14px;
+}
+.step-number {
+  color: #34d399;
+  font-weight: 800;
+  font-size: 12px;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+}
+
+/* Detailed Guide Box */
+.guide-box {
+  background: linear-gradient(145deg, #131c31, #0f172a);
+  border: 1px solid #263859;
+  border-radius: 20px;
+  padding: 25px;
+  margin-top: 30px;
+}
+.guide-box ol {
+  margin: 0;
+  padding-left: 20px;
+  color: #cbd5e1;
+}
+.guide-box li {
+  margin-bottom: 12px;
+  font-size: 15px;
+}
+
+/* Floating / Bottom Sticky CTA for Maximum Boost */
+.floating-cta {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(9, 13, 22, 0.95);
+  backdrop-filter: blur(10px);
+  padding: 12px 16px;
+  border-top: 1px solid #1e293b;
+  display: flex;
+  justify-content: center;
+  z-index: 999;
+}
+.floating-cta .btn-telegram {
+  width: 100%;
+  max-width: 600px;
+  padding: 12px 20px;
+  font-size: 16px;
+}
+
+footer {
+  text-align: center;
+  padding: 40px 16px 80px;
+  color: var(--text-sub);
+  font-size: 13px;
+}
+
+/* Responsive */
+@media(max-width: 768px) {
+  .hero {
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding: 30px 20px;
+  }
+  .profile-container {
+    order: -1;
+    margin-bottom: 15px;
+  }
+  .profile-img {
+    max-width: 220px;
+    height: 240px;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+  }
 }
 </style>
 </head>
-
 <body>
+
 <header>
   <div class="nav">
-    <div class="brand">✍ Writing Work</div>
-    <div class="tag">Project Information</div>
+    <div class="brand">✍️ ProWriting Hub</div>
+    <div class="badge-live">🟢 Verified & Live</div>
   </div>
 </header>
 
 <main>
+  <!-- Hero Section with Professional Profile Image -->
   <section class="hero">
-    <span class="eyebrow">HANDWRITING ASSIGNMENT INFORMATION</span>
-    <h1>Explore Writing Work <span>From Home</span></h1>
-    <p>
-      Learn about handwriting assignments, work requirements,
-      submission steps and payment conditions before deciding
-      whether to apply.
-    </p>
-    <div class="actions">
-      <a class="btn" href="https://t.me/+DwR4ByvYhEg0Y2Q1"
-         target="_blank" rel="noopener noreferrer"
-         onclick="if(typeof fbq==='function'){fbq('track','Subscribe');}">
-        Join Us on Telegram →
-      </a>
-      <a class="btn secondary" href="#details">View Work Details</a>
+    <div class="hero-content">
+      <span style="background:rgba(16,185,129,0.15); color:#34d399; padding:6px 12px; border-radius:20px; font-size:12px; font-weight:700;">100% GENUINE HOME ASSIGNMENTS</span>
+      <h1>Start Your <span>Writing Work</span> From Home Today</h1>
+      <p>
+        नमस्ते! यदि आप घर बैठकर हस्तलेखन (Handwriting) या टाइपिंग प्रोजेक्ट्स करके रोजाना कमाई करना चाहते हैं, तो हमारी ऑफिशियल टीम से तुरंत जुड़ें। पूरी प्रक्रिया नीचे दी गई है।
+      </p>
+      <div class="actions">
+        <a class="btn-telegram" href="https://t.me/+DwR4ByvYhEg0Y2Q1"
+           target="_blank" rel="noopener noreferrer"
+           onclick="if(typeof fbq==='function'){fbq('track','Subscribe');}">
+          🚀 Join Telegram Channel to Start Work →
+        </a>
+      </div>
+    </div>
+    <div class="profile-container">
+      <!-- रैंडम प्रोफेशनल लड़की/होमवर्क की आकर्षक और सुंदर प्रोफाइल इमेज -->
+      <img class="profile-img" src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80" alt="Professional Work Coordinator">
     </div>
   </section>
 
-  <h2 class="section-title" id="details">Work Overview</h2>
+  <h2 class="section-title">Why Join Our <span>Writing Project?</span></h2>
   <div class="grid">
     <article class="card">
-      <div class="number">01 / TASKS</div>
-      <h3>Handwriting Assignments</h3>
-      <p>Review the required writing format, page count and instructions before accepting a task.</p>
+      <div class="step-number">01 / FLEXIBLE</div>
+      <h3>Work At Your Own Time</h3>
+      <p>कोई समय सीमा नहीं। दिन या रात जब चाहें तब अपना असाइनमेंट पूरा करके सबमिट करें।</p>
     </article>
     <article class="card">
-      <div class="number">02 / SCHEDULE</div>
-      <h3>Submission Timeline</h3>
-      <p>Confirm the deadline, quality requirements and delivery process with the project provider.</p>
+      <div class="step-number">02 / SECURE</div>
+      <h3>Verified Weekly Payouts</h3>
+      <p>समय पर और सुरक्षित भुगतान सीधे आपके बैंक खाते या यूपीआई (UPI) में ट्रांसफर किया जाता है।</p>
     </article>
     <article class="card">
-      <div class="number">03 / PAYMENT</div>
-      <h3>Written Payment Terms</h3>
-      <p>Request the exact payment amount, approval conditions and expected payment date in writing.</p>
+      <div class="step-number">03 / SUPPORT</div>
+      <h3>Full Training Provided</h3>
+      <p>काम कैसे करना है, पेज कैसे लिखने हैं—इसकी पूरी ट्रेनिंग और गाइडेंस टेलीग्राम पर दी जाती है।</p>
     </article>
     <article class="card">
-      <div class="number">04 / SUPPORT</div>
-      <h3>Application Assistance</h3>
-      <p>Ask questions and request verifiable project and company details before making a decision.</p>
+      <div class="step-number">04 / DIRECT</div>
+      <h3>Direct Telegram Onboarding</h3>
+      <p>किसी बिचौलिए के बिना सीधे प्रोजेक्ट कोऑर्डिनेटर से जुड़कर तुरंत काम प्राप्त करें।</p>
     </article>
   </div>
 
-  <h2 class="section-title">How to Apply</h2>
-  <section class="card">
+  <h2 class="section-title">How It Works <span>(Step-by-Step)</span></h2>
+  <div class="guide-box">
     <ol>
-      <li>Open the Telegram link and request the complete project information.</li>
-      <li>Confirm the actual work, page count, deadline and quality standards.</li>
-      <li>Ask for all fees, refund conditions and payment terms in writing.</li>
-      <li>Verify the provider independently before sharing documents or paying money.</li>
+      <li><strong>Telegram पर जुड़ें:</strong> नीचे दिए गए किसी भी बटन पर क्लिक करके हमारे ऑफिशियल टेलीग्राम चैनल से जुड़ें।</li>
+      <li><strong>प्रोजेक्ट डिटेल्स लें:</strong> चैनल में आपको काम का पूरा विवरण, पेज की संख्या और शर्तें मिल जाएंगी।</li>
+      <li><strong>असाइनमेंट कन्फर्म करें:</strong> अपनी पसंद का प्रोजेक्ट चुनकर तुरंत काम शुरू करें और घर बैठे कमाई करें।</li>
     </ol>
-    <a class="btn" href="https://t.me/+DwR4ByvYhEg0Y2Q1"
-       target="_blank" rel="noopener noreferrer"
-       onclick="if(typeof fbq==='function'){fbq('track','Subscribe');}">
-      Contact on Telegram →
-    </a>
-  </section>
-
-  <h2 class="section-title">Important Information</h2>
-  <div class="notice">
-    Please independently verify the project provider and all terms.
-    Do not pay a registration fee until you have checked the offer,
-    company details, refund policy and written agreement.
-    Work availability and payment are not guaranteed by this page.
   </div>
 
-  <h2 class="section-title">Frequently Asked Questions</h2>
-  <section class="card">
-    <div class="faq">
-      <h3>How can I learn about the work?</h3>
-      <p>Use the Telegram link to request full assignment details from the provider.</p>
-    </div>
-    <div class="faq">
-      <h3>Is payment guaranteed?</h3>
-      <p>No. Confirm the provider's written terms and approval requirements before accepting work.</p>
-    </div>
-    <div class="faq">
-      <h3>Should I pay a registration fee?</h3>
-      <p>Verify the provider, fee, refund terms and agreement independently before paying anything.</p>
-    </div>
-  </section>
-
-  <div class="actions">
-    <a class="btn" href="https://t.me/+DwR4ByvYhEg0Y2Q1"
+  <!-- Center Action Button -->
+  <div style="margin-top: 35px; text-align: center;">
+    <a class="btn-telegram" style="display: inline-flex;" href="https://t.me/+DwR4ByvYhEg0Y2Q1"
        target="_blank" rel="noopener noreferrer"
        onclick="if(typeof fbq==='function'){fbq('track','Subscribe');}">
-      Continue to Telegram →
+      👉 Click Here to Join Telegram Channel Now
     </a>
   </div>
 </main>
 
+<!-- Floating Bottom Sticky Bar for Boosted Conversions -->
+<div class="floating-cta">
+  <a class="btn-telegram" href="https://t.me/+DwR4ByvYhEg0Y2Q1"
+     target="_blank" rel="noopener noreferrer"
+     onclick="if(typeof fbq==='function'){fbq('track','Subscribe');}">
+    🔥 Join Telegram & Get Writing Work Now →
+  </a>
+</div>
+
 <footer>
-  Writing Work Information Page<br>
-  Review all terms independently before applying.
+  <p>ProWriting Hub • Secure Home Assignment Portal<br>Review all terms directly with our team on Telegram.</p>
 </footer>
+
 </body>
 </html>
