@@ -1,376 +1,436 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hi" class="dark scroll-smooth">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#0f172a">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scriptify Global | Official Freelance Writing & WFH Portal</title>
+    
+    <!-- Meta Pixel Code (Strictly PageView only - No button event listeners attached) -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '916654341298252');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=916654341298252&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
 
-<title>Certified Writing Work From Home | Earn Daily</title>
-<meta name="description" content="Join genuine handwriting & typing work from home. Flexible hours, verified payouts, and direct onboarding via Telegram.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        emeraldGlow: '#10b981',
+                        goldGlow: '#f59e0b',
+                        cyanGlow: '#06b6d4',
+                        telegram: '#0088cc',
+                        navyDark: '#0b1120',
+                        slateCard: '#1e293b',
+                    },
+                    keyframes: {
+                        bounceCustom: {
+                            '0%, 100%': { transform: 'translateY(-5%) scale(1)' },
+                            '50%': { transform: 'translateY(0) scale(1.02)' },
+                        },
+                        pulseGlow: {
+                            '0%, 100%': { boxShadow: '0 0 20px rgba(245, 158, 11, 0.4)' },
+                            '50%': { boxShadow: '0 0 35px rgba(245, 158, 11, 0.8), 0 0 15px rgba(16, 185, 129, 0.5)' },
+                        }
+                    },
+                    animation: {
+                        'bounce-cta': 'bounceCustom 2s infinite ease-in-out',
+                        'pulse-glow': 'pulseGlow 2s infinite ease-in-out',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-<!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;
-n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)
-}(window,document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #070a12;
+            color: #f1f5f9;
+            overflow-x: hidden;
+        }
 
-fbq('init','1573120420782466');
-fbq('track','PageView');
-</script>
-<noscript>
-<img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1573120420782466&ev=PageView&noscript=1"
-alt="">
-</noscript>
-<!-- End Meta Pixel Code -->
+        .glass-card {
+            background: rgba(15, 23, 42, 0.8);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
 
-<style>
-:root {
-  --bg-color: #090d16;
-  --card-bg: #131c31;
-  --accent: #10b981;
-  --accent-glow: rgba(16, 185, 129, 0.4);
-  --text-main: #f8fafc;
-  --text-sub: #94a3b8;
-  --primary-btn: #0088cc;
-  --primary-btn-hover: #0077b3;
-}
+        .glass-card-gold {
+            background: linear-gradient(135deg, rgba(30, 41, 59, 0.85) 0%, rgba(15, 23, 42, 0.95) 100%);
+            border: 1px solid rgba(245, 158, 11, 0.4);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
 
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{
-  margin:0;
-  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-  background: var(--bg-color);
-  color: var(--text-main);
-  line-height: 1.7;
-}
+        .glass-card-emerald {
+            background: linear-gradient(135deg, rgba(16, 185, 129, 0.1) 0%, rgba(15, 23, 42, 0.95) 100%);
+            border: 1px solid rgba(16, 185, 129, 0.4);
+        }
 
-/* Header */
-header{
-  background: rgba(15, 23, 42, 0.9);
-  backdrop-filter: blur(10px);
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  border-bottom: 1px solid #1e293b;
-  padding: 14px 20px;
-}
-.nav{
-  max-width: 1000px;
-  margin: auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.brand{
-  font-size: 20px;
-  font-weight: 800;
-  color: #34d399;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-.badge-live {
-  background: rgba(16, 185, 129, 0.2);
-  color: #34d399;
-  padding: 4px 10px;
-  border-radius: 20px;
-  font-size: 11px;
-  font-weight: 700;
-  border: 1px solid rgba(16, 185, 129, 0.4);
-}
+        .glass-card-sky {
+            background: linear-gradient(135deg, rgba(14, 165, 233, 0.1) 0%, rgba(15, 23, 42, 0.95) 100%);
+            border: 1px solid rgba(14, 165, 233, 0.4);
+        }
 
-/* Main Container */
-main{
-  max-width: 900px;
-  margin: auto;
-  padding: 30px 16px 50px;
-}
+        .glass-card-purple {
+            background: linear-gradient(135deg, rgba(168, 85, 247, 0.1) 0%, rgba(15, 23, 42, 0.95) 100%);
+            border: 1px solid rgba(168, 85, 247, 0.4);
+        }
 
-/* Hero Section */
-.hero {
-  display: grid;
-  grid-template-columns: 1.2fr 0.8fr;
-  gap: 30px;
-  align-items: center;
-  background: linear-gradient(135deg, #111c33 0%, #0d1526 100%);
-  border: 1px solid #1f314f;
-  border-radius: 24px;
-  padding: 40px 30px;
-  box-shadow: 0 20px 50px rgba(0,0,0,0.5);
-  position: relative;
-  overflow: hidden;
-}
-.hero-content h1 {
-  font-size: clamp(28px, 5vw, 42px);
-  line-height: 1.2;
-  margin: 10px 0 16px;
-  font-weight: 800;
-}
-.hero-content h1 span {
-  color: #34d399;
-}
-.hero-content p {
-  color: var(--text-sub);
-  font-size: 15px;
-  margin-bottom: 25px;
-}
-.profile-container {
-  position: relative;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-.profile-img {
-  width: 100%;
-  max-width: 280px;
-  height: 320px;
-  object-fit: cover;
-  border-radius: 20px;
-  border: 2px solid #34d399;
-  box-shadow: 0 10px 30px rgba(16, 185, 129, 0.2);
-}
-
-/* Boosted Action Buttons */
-.actions {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-.btn-telegram {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  background: linear-gradient(135deg, #0088cc, #00a2ff);
-  color: white;
-  text-decoration: none;
-  font-weight: 700;
-  font-size: 17px;
-  padding: 16px 24px;
-  border-radius: 14px;
-  box-shadow: 0 0 25px rgba(0, 136, 204, 0.5);
-  border: 1px solid #33b5ff;
-  transition: all 0.3s ease;
-  animation: pulse-glow 2s infinite;
-  text-align: center;
-}
-.btn-telegram:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 0 35px rgba(0, 136, 204, 0.8);
-}
-
-@keyframes pulse-glow {
-  0% { box-shadow: 0 0 15px rgba(0, 136, 204, 0.4); }
-  50% { box-shadow: 0 0 30px rgba(0, 136, 204, 0.8); }
-  100% { box-shadow: 0 0 15px rgba(0, 136, 204, 0.4); }
-}
-
-/* Sections & Grid */
-.section-title {
-  font-size: 24px;
-  margin: 40px 0 20px;
-  font-weight: 700;
-  text-align: center;
-}
-.section-title span {
-  color: #34d399;
-}
-.grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 16px;
-}
-.card {
-  background: var(--card-bg);
-  border: 1px solid #1e293b;
-  border-radius: 16px;
-  padding: 22px;
-  transition: transform 0.2s;
-}
-.card:hover {
-  border-color: #34d399;
-}
-.card h3 {
-  margin: 0 0 8px;
-  font-size: 17px;
-  color: #f1f5f9;
-}
-.card p {
-  margin: 0;
-  color: var(--text-sub);
-  font-size: 14px;
-}
-.step-number {
-  color: #34d399;
-  font-weight: 800;
-  font-size: 12px;
-  margin-bottom: 6px;
-  text-transform: uppercase;
-}
-
-/* Detailed Guide Box */
-.guide-box {
-  background: linear-gradient(145deg, #131c31, #0f172a);
-  border: 1px solid #263859;
-  border-radius: 20px;
-  padding: 25px;
-  margin-top: 30px;
-}
-.guide-box ol {
-  margin: 0;
-  padding-left: 20px;
-  color: #cbd5e1;
-}
-.guide-box li {
-  margin-bottom: 12px;
-  font-size: 15px;
-}
-
-/* Floating / Bottom Sticky CTA for Maximum Boost */
-.floating-cta {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(9, 13, 22, 0.95);
-  backdrop-filter: blur(10px);
-  padding: 12px 16px;
-  border-top: 1px solid #1e293b;
-  display: flex;
-  justify-content: center;
-  z-index: 999;
-}
-.floating-cta .btn-telegram {
-  width: 100%;
-  max-width: 600px;
-  padding: 12px 20px;
-  font-size: 16px;
-}
-
-footer {
-  text-align: center;
-  padding: 40px 16px 80px;
-  color: var(--text-sub);
-  font-size: 13px;
-}
-
-/* Responsive */
-@media(max-width: 768px) {
-  .hero {
-    grid-template-columns: 1fr;
-    text-align: center;
-    padding: 30px 20px;
-  }
-  .profile-container {
-    order: -1;
-    margin-bottom: 15px;
-  }
-  .profile-img {
-    max-width: 220px;
-    height: 240px;
-  }
-  .grid {
-    grid-template-columns: 1fr;
-  }
-}
-</style>
+        .glass-card-pink {
+            background: linear-gradient(135deg, rgba(236, 72, 153, 0.1) 0%, rgba(15, 23, 42, 0.95) 100%);
+            border: 1px solid rgba(236, 72, 153, 0.4);
+        }
+    </style>
 </head>
-<body>
+<body class="antialiased selection:bg-amber-500 selection:text-black">
 
-<header>
-  <div class="nav">
-    <div class="brand">✍️ ProWriting Hub</div>
-    <div class="badge-live">🟢 Verified & Live</div>
-  </div>
-</header>
+    <header class="sticky top-0 z-50 bg-slate-950/80 backdrop-blur-xl border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="w-11 h-11 rounded-2xl bg-gradient-to-tr from-amber-500 via-amber-400 to-emerald-400 p-0.5 shadow-lg shadow-amber-500/20">
+                    <div class="w-full h-full bg-slate-950 rounded-[14px] flex items-center justify-center">
+                        <svg class="w-6 h-6 text-amber-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                        </svg>
+                    </div>
+                </div>
+                <div>
+                    <span class="text-xl font-black tracking-tight text-white">SCRIPTIFY<span class="text-amber-400">GLOBAL</span></span>
+                    <span class="block text-[10px] font-bold text-emerald-400 tracking-wider uppercase">Official Freelance Portal</span>
+                </div>
+            </div>
 
-<main>
-  <!-- Hero Section with Professional Profile Image -->
-  <section class="hero">
-    <div class="hero-content">
-      <span style="background:rgba(16,185,129,0.15); color:#34d399; padding:6px 12px; border-radius:20px; font-size:12px; font-weight:700;">100% GENUINE HOME ASSIGNMENTS</span>
-      <h1>Start Your <span>Writing Work</span> From Home Today</h1>
-      <p>
-        नमस्ते! यदि आप घर बैठकर हस्तलेखन (Handwriting) या टाइपिंग प्रोजेक्ट्स करके रोजाना कमाई करना चाहते हैं, तो हमारी ऑफिशियल टीम से तुरंत जुड़ें। पूरी प्रक्रिया नीचे दी गई है।
-      </p>
-      <div class="actions">
-        <a class="btn-telegram" href="https://t.me/+DwR4ByvYhEg0Y2Q1"
-           target="_blank" rel="noopener noreferrer"
-           onclick="if(typeof fbq==='function'){fbq('track','Subscribe');}">
-          🚀 Join Telegram Channel to Start Work →
-        </a>
-      </div>
-    </div>
-    <div class="profile-container">
-      <!-- रैंडम प्रोफेशनल लड़की/होमवर्क की आकर्षक और सुंदर प्रोफाइल इमेज -->
-      <img class="profile-img" src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80" alt="Professional Work Coordinator">
-    </div>
-  </section>
+            <a href="#plans" class="inline-flex items-center gap-2 px-5 py-2.5 bg-gradient-to-r from-amber-500 to-amber-400 hover:brightness-110 text-slate-950 font-black text-sm rounded-xl transition-all shadow-lg shadow-amber-500/20">
+                <i class="fa-solid fa-list-check"></i>
+                <span>प्रोजेक्ट प्लान्स</span>
+            </a>
+        </div>
+    </header>
 
-  <h2 class="section-title">Why Join Our <span>Writing Project?</span></h2>
-  <div class="grid">
-    <article class="card">
-      <div class="step-number">01 / FLEXIBLE</div>
-      <h3>Work At Your Own Time</h3>
-      <p>कोई समय सीमा नहीं। दिन या रात जब चाहें तब अपना असाइनमेंट पूरा करके सबमिट करें।</p>
-    </article>
-    <article class="card">
-      <div class="step-number">02 / SECURE</div>
-      <h3>Verified Weekly Payouts</h3>
-      <p>समय पर और सुरक्षित भुगतान सीधे आपके बैंक खाते या यूपीआई (UPI) में ट्रांसफर किया जाता है।</p>
-    </article>
-    <article class="card">
-      <div class="step-number">03 / SUPPORT</div>
-      <h3>Full Training Provided</h3>
-      <p>काम कैसे करना है, पेज कैसे लिखने हैं—इसकी पूरी ट्रेनिंग और गाइडेंस टेलीग्राम पर दी जाती है।</p>
-    </article>
-    <article class="card">
-      <div class="step-number">04 / DIRECT</div>
-      <h3>Direct Telegram Onboarding</h3>
-      <p>किसी बिचौलिए के बिना सीधे प्रोजेक्ट कोऑर्डिनेटर से जुड़कर तुरंत काम प्राप्त करें।</p>
-    </article>
-  </div>
+    <main>
+        <section class="relative pt-12 pb-16 overflow-hidden bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-400 text-xs font-bold mb-6">
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <span>Verified WFH Handwriting & Typing Projects</span>
+                </div>
 
-  <h2 class="section-title">How It Works <span>(Step-by-Step)</span></h2>
-  <div class="guide-box">
-    <ol>
-      <li><strong>Telegram पर जुड़ें:</strong> नीचे दिए गए किसी भी बटन पर क्लिक करके हमारे ऑफिशियल टेलीग्राम चैनल से जुड़ें।</li>
-      <li><strong>प्रोजेक्ट डिटेल्स लें:</strong> चैनल में आपको काम का पूरा विवरण, पेज की संख्या और शर्तें मिल जाएंगी।</li>
-      <li><strong>असाइनमेंट कन्फर्म करें:</strong> अपनी पसंद का प्रोजेक्ट चुनकर तुरंत काम शुरू करें और घर बैठे कमाई करें।</li>
-    </ol>
-  </div>
+                <h1 class="text-3xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight leading-tight max-w-4xl mx-auto">
+                    घर बैठे वर्क फ्रॉम होम करें और प्राप्त करें <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-amber-200 to-emerald-400">60% एडवांस सैलरी</span>
+                </h1>
 
-  <!-- Center Action Button -->
-  <div style="margin-top: 35px; text-align: center;">
-    <a class="btn-telegram" style="display: inline-flex;" href="https://t.me/+DwR4ByvYhEg0Y2Q1"
-       target="_blank" rel="noopener noreferrer"
-       onclick="if(typeof fbq==='function'){fbq('track','Subscribe');}">
-      👉 Click Here to Join Telegram Channel Now
-    </a>
-  </div>
-</main>
+                <p class="mt-6 text-base sm:text-lg text-slate-300 max-w-2xl mx-auto leading-relaxed">
+                    Scriptify Global पर अपने पसंदीदा 5 प्रोजेक्ट प्लान्स में से चुनाव करें। प्रत्येक प्लान के अंतर्गत ऑनबोर्डिंग पूर्ण होते ही 60% एडवांस सैलरी सीधे आपके खाते में ट्रांसफर की जाती है।
+                </p>
 
-<!-- Floating Bottom Sticky Bar for Boosted Conversions -->
-<div class="floating-cta">
-  <a class="btn-telegram" href="https://t.me/+DwR4ByvYhEg0Y2Q1"
-     target="_blank" rel="noopener noreferrer"
-     onclick="if(typeof fbq==='function'){fbq('track','Subscribe');}">
-    🔥 Join Telegram & Get Writing Work Now →
-  </a>
-</div>
+                <div class="mt-8">
+                    <a href="#plans" class="inline-flex items-center justify-center gap-3 px-8 py-4 bg-gradient-to-r from-amber-500 to-amber-400 text-slate-950 font-black text-base rounded-2xl shadow-xl shadow-amber-500/20 hover:scale-105 transition-all">
+                        <span>प्रोजेक्ट प्लान चुनें</span>
+                        <i class="fa-solid fa-arrow-down"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
 
-<footer>
-  <p>ProWriting Hub • Secure Home Assignment Portal<br>Review all terms directly with our team on Telegram.</p>
-</footer>
+        <section id="plans" class="py-16 bg-slate-900/80 border-y border-slate-800">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <span class="text-xs font-bold text-amber-400 tracking-widest uppercase">AVAILABLE PROJECT PLANS</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-1">हमारे 5 वर्क प्रोजेक्ट प्लान्स</h2>
+                    <p class="text-slate-300 text-sm sm:text-base mt-2 max-w-2xl mx-auto">
+                        प्रत्येक प्लान के नीचे दिए गए "Select Plan" बटन पर क्लिक करें। आपका टेलीग्राम अपने आप ओपन हो जाएगा और चुना हुआ प्रोजेक्ट का पूरा विवरण टेलीग्राम में टाइप हो जाएगा।
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+
+                    <!-- Plan 1: 7-Day Plan (Fee: ₹499) -->
+                    <div class="glass-card-gold p-6 rounded-3xl relative flex flex-col justify-between border hover:scale-[1.02] transition-all">
+                        <div class="absolute -top-3 right-4 bg-amber-500 text-slate-950 font-black text-[10px] px-3 py-1 rounded-full uppercase tracking-wider shadow-md">
+                            Most Popular
+                        </div>
+                        <div>
+                            <div class="flex items-center space-x-3 mb-4">
+                                <div class="w-11 h-11 rounded-2xl bg-amber-500/20 text-amber-400 flex items-center justify-center text-xl font-bold border border-amber-500/30">
+                                    <i class="fa-solid fa-stopwatch"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-black text-white">Project Plan 1</h3>
+                                    <p class="text-xs text-amber-400 font-bold">7 Days Weekly Cycle</p>
+                                </div>
+                            </div>
+                            
+                            <div class="my-4 p-4 rounded-2xl bg-slate-950/80 border border-slate-800 space-y-2">
+                                <div class="flex justify-between items-center text-xs">
+                                    <span class="text-slate-400 font-bold">अवधि:</span>
+                                    <span class="text-white font-extrabold">7 दिन</span>
+                                </div>
+                                <div class="flex justify-between items-center text-xs">
+                                    <span class="text-slate-400 font-bold">अनुमानित सैलरी:</span>
+                                    <span class="text-amber-400 font-black text-sm">₹35,000 — ₹45,000</span>
+                                </div>
+                                <div class="flex justify-between items-center text-xs">
+                                    <span class="text-slate-400 font-bold">60% एडवांस:</span>
+                                    <span class="text-emerald-400 font-black text-sm">₹21,000</span>
+                                </div>
+                                <div class="flex justify-between items-center text-xs pt-1 border-t border-slate-800">
+                                    <span class="text-slate-400 font-bold">रजिस्ट्रेशन फीस:</span>
+                                    <span class="text-amber-300 font-black text-sm">₹499</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-6">
+                            <a href="https://t.me/Pankaj_Bhardwaj_invest_No1?text=Hello%20Pankaj%20Sir%2C%20I%20want%20to%20select%20Project%20Plan%201%20%287%20Days%29.%20Details%3A%20Total%20Salary%3A%20Rs%2035%2C000%20-%2045%2C000%20%7C%2060%25%20Advance%3A%20Rs%2021%2C000%20%7C%20Registration%20Fee%3A%20Rs%20499.%20Please%20guide%20me." 
+                               target="_blank" rel="noopener noreferrer" 
+                               class="animate-pulse-glow w-full py-4 bg-gradient-to-r from-amber-500 to-amber-400 hover:brightness-110 text-slate-950 font-black text-center text-sm rounded-xl block transition-all shadow-lg">
+                                SELECT PLAN 1 (7 DAYS) <i class="fa-brands fa-telegram ml-1"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Plan 2: 15-Day Plan (Fee: ₹799) -->
+                    <div class="glass-card-sky p-6 rounded-3xl relative flex flex-col justify-between hover:scale-[1.02] transition-all">
+                        <div>
+                            <div class="flex items-center space-x-3 mb-4">
+                                <div class="w-11 h-11 rounded-2xl bg-sky-500/20 text-sky-400 flex items-center justify-center text-xl font-bold border border-sky-500/30">
+                                    <i class="fa-solid fa-calendar-days"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-black text-white">Project Plan 2</h3>
+                                    <p class="text-xs text-sky-400 font-bold">15 Days Bi-Weekly Plan</p>
+                                </div>
+                            </div>
+
+                            <div class="my-4 p-4 rounded-2xl bg-slate-950/80 border border-slate-800 space-y-2">
+                                <div class="flex justify-between items-center text-xs">
+                                    <span class="text-slate-400 font-bold">अवधि:</span>
+                                    <span class="text-white font-extrabold">15 दिन</span>
+                                </div>
+                                <div class="flex justify-between items-center text-xs">
+                                    <span class="text-slate-400 font-bold">अनुमानित सैलरी:</span>
+                                    <span class="text-sky-400 font-black text-sm">₹75,000 — ₹90,000</span>
+                                </div>
+                                <div class="flex justify-between items-center text-xs">
+                                    <span class="text-slate-400 font-bold">60% एडवांस:</span>
+                                    <span class="text-emerald-400 font-black text-sm">₹45,000</span>
+                                </div>
+                                <div class="flex justify-between items-center text-xs pt-1 border-t border-slate-800">
+                                    <span class="text-slate-400 font-bold">रजिस्ट्रेशन फीस:</span>
+                                    <span class="text-sky-300 font-black text-sm">₹799</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-6">
+                            <a href="https://t.me/Pankaj_Bhardwaj_invest_No1?text=Hello%20Pankaj%20Sir%2C%20I%20want%20to%20select%20Project%20Plan%202%20%2815%20Days%29.%20Details%3A%20Total%20Salary%3A%20Rs%2075%2C000%20-%2090%2C000%20%7C%2060%25%20Advance%3A%20Rs%2045%2C000%20%7C%20Registration%20Fee%3A%20Rs%20799.%20Please%20guide%20me." 
+                               target="_blank" rel="noopener noreferrer" 
+                               class="w-full py-4 bg-sky-500 hover:bg-sky-400 text-slate-950 font-black text-center text-sm rounded-xl block transition-all shadow-lg shadow-sky-500/20">
+                                SELECT PLAN 2 (15 DAYS) <i class="fa-brands fa-telegram ml-1"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Plan 3: 30-Day Plan (Fee: ₹1,199) -->
+                    <div class="glass-card-emerald p-6 rounded-3xl relative flex flex-col justify-between hover:scale-[1.02] transition-all">
+                        <div>
+                            <div class="flex items-center space-x-3 mb-4">
+                                <div class="w-11 h-11 rounded-2xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-xl font-bold border border-emerald-500/30">
+                                    <i class="fa-solid fa-calendar-check"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-black text-white">Project Plan 3</h3>
+                                    <p class="text-xs text-emerald-400 font-bold">30 Days (1 Month) Plan</p>
+                                </div>
+                            </div>
+
+                            <div class="my-4 p-4 rounded-2xl bg-slate-950/80 border border-slate-800 space-y-2">
+                                <div class="flex justify-between items-center text-xs">
+                                    <span class="text-slate-400 font-bold">अवधि:</span>
+                                    <span class="text-white font-extrabold">30 दिन (1 महीना)</span>
+                                </div>
+                                <div class="flex justify-between items-center text-xs">
+                                    <span class="text-slate-400 font-bold">अनुमानित सैलरी:</span>
+                                    <span class="text-emerald-400 font-black text-sm">₹1,50,000</span>
+                                </div>
+                                <div class="flex justify-between items-center text-xs">
+                                    <span class="text-slate-400 font-bold">60% एडवांस:</span>
+                                    <span class="text-emerald-400 font-black text-sm">₹90,000</span>
+                                </div>
+                                <div class="flex justify-between items-center text-xs pt-1 border-t border-slate-800">
+                                    <span class="text-slate-400 font-bold">रजिस्ट्रेशन फीस:</span>
+                                    <span class="text-emerald-300 font-black text-sm">₹1,199</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-6">
+                            <a href="https://t.me/Pankaj_Bhardwaj_invest_No1?text=Hello%20Pankaj%20Sir%2C%20I%20want%20to%20select%20Project%20Plan%203%20%2830%20Days%20/%201%20Month%29.%20Details%3A%20Total%20Salary%3A%20Rs%201%2C50%2C000%20%7C%2060%25%20Advance%3A%20Rs%2090%2C000%20%7C%20Registration%20Fee%3A%20Rs%201%2C199.%20Please%20guide%20me." 
+                               target="_blank" rel="noopener noreferrer" 
+                               class="w-full py-4 bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-black text-center text-sm rounded-xl block transition-all shadow-lg shadow-emerald-500/20">
+                                SELECT PLAN 3 (30 DAYS) <i class="fa-brands fa-telegram ml-1"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Plan 4: 60-Day Plan (Fee: ₹1,799) -->
+                    <div class="glass-card-purple p-6 rounded-3xl relative flex flex-col justify-between hover:scale-[1.02] transition-all">
+                        <div>
+                            <div class="flex items-center space-x-3 mb-4">
+                                <div class="w-11 h-11 rounded-2xl bg-purple-500/20 text-purple-400 flex items-center justify-center text-xl font-bold border border-purple-500/30">
+                                    <i class="fa-solid fa-layer-group"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-black text-white">Project Plan 4</h3>
+                                    <p class="text-xs text-purple-400 font-bold">60 Days (2 Months) Contract</p>
+                                </div>
+                            </div>
+
+                            <div class="my-4 p-4 rounded-2xl bg-slate-950/80 border border-slate-800 space-y-2">
+                                <div class="flex justify-between items-center text-xs">
+                                    <span class="text-slate-400 font-bold">अवधि:</span>
+                                    <span class="text-white font-extrabold">60 दिन (2 महीने)</span>
+                                </div>
+                                <div class="flex justify-between items-center text-xs">
+                                    <span class="text-slate-400 font-bold">अनुमानित सैलरी:</span>
+                                    <span class="text-purple-400 font-black text-sm">₹3,00,000</span>
+                                </div>
+                                <div class="flex justify-between items-center text-xs">
+                                    <span class="text-slate-400 font-bold">60% एडवांस:</span>
+                                    <span class="text-emerald-400 font-black text-sm">₹1,80,000</span>
+                                </div>
+                                <div class="flex justify-between items-center text-xs pt-1 border-t border-slate-800">
+                                    <span class="text-slate-400 font-bold">रजिस्ट्रेशन फीस:</span>
+                                    <span class="text-purple-300 font-black text-sm">₹1,799</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-6">
+                            <a href="https://t.me/Pankaj_Bhardwaj_invest_No1?text=Hello%20Pankaj%20Sir%2C%20I%20want%20to%20select%20Project%20Plan%204%20%2860%20Days%20/%202%20Months%29.%20Details%3A%20Total%20Salary%3A%20Rs%203%2C00%2C000%20%7C%2060%25%20Advance%3A%20Rs%201%2C80%2C000%20%7C%20Registration%20Fee%3A%20Rs%201%2C799.%20Please%20guide%20me." 
+                               target="_blank" rel="noopener noreferrer" 
+                               class="w-full py-4 bg-purple-500 hover:bg-purple-400 text-slate-950 font-black text-center text-sm rounded-xl block transition-all shadow-lg shadow-purple-500/20">
+                                SELECT PLAN 4 (60 DAYS) <i class="fa-brands fa-telegram ml-1"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Plan 5: 90-Day Plan (Fee: ₹2,499) -->
+                    <div class="glass-card-pink p-6 rounded-3xl relative flex flex-col justify-between hover:scale-[1.02] transition-all md:col-span-2 lg:col-span-2">
+                        <div class="flex flex-col md:flex-row md:items-center justify-between gap-6">
+                            <div class="flex-1">
+                                <div class="flex items-center space-x-3 mb-4">
+                                    <div class="w-11 h-11 rounded-2xl bg-pink-500/20 text-pink-400 flex items-center justify-center text-xl font-bold border border-pink-500/30">
+                                        <i class="fa-solid fa-crown"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xl font-black text-white">Project Plan 5</h3>
+                                        <p class="text-xs text-pink-400 font-bold">90 Days (3 Months) Premium Enterprise</p>
+                                    </div>
+                                </div>
+
+                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 p-4 rounded-2xl bg-slate-950/80 border border-slate-800 text-xs">
+                                    <div>
+                                        <span class="text-slate-400 font-bold block">अवधि:</span>
+                                        <span class="text-white font-extrabold text-sm">90 दिन (3 महीने)</span>
+                                    </div>
+                                    <div>
+                                        <span class="text-slate-400 font-bold block">अनुमानित सैलरी:</span>
+                                        <span class="text-pink-400 font-black text-sm">₹4,50,000</span>
+                                    </div>
+                                    <div>
+                                        <span class="text-slate-400 font-bold block">60% एडवांस:</span>
+                                        <span class="text-emerald-400 font-black text-sm">₹2,70,000</span>
+                                    </div>
+                                    <div>
+                                        <span class="text-slate-400 font-bold block">रजिस्ट्रेशन फीस:</span>
+                                        <span class="text-pink-300 font-black text-sm">₹2,499</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="md:w-64 flex flex-col justify-center">
+                                <a href="https://t.me/Pankaj_Bhardwaj_invest_No1?text=Hello%20Pankaj%20Sir%2C%20I%20want%20to%20select%20Project%20Plan%205%20%2890%20Days%20/%203%20Months%29.%20Details%3A%20Total%20Salary%3A%20Rs%204%2C50%2C000%20%7C%2060%25%20Advance%3A%20Rs%202%2C70%2C000%20%7C%20Registration%20Fee%3A%20Rs%202%2C499.%20Please%20guide%20me." 
+                                   target="_blank" rel="noopener noreferrer" 
+                                   class="w-full py-4 bg-gradient-to-r from-pink-500 to-amber-500 hover:brightness-110 text-slate-950 font-black text-center text-sm rounded-xl block transition-all shadow-xl shadow-pink-500/20">
+                                    SELECT PLAN 5 (90 DAYS) <i class="fa-brands fa-telegram ml-1"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="py-12 bg-slate-900 border-b border-slate-800">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <div class="glass-card-gold p-8 rounded-3xl">
+                    <h2 class="text-2xl font-black text-amber-400 mb-2">Customer Support</h2>
+                    <p class="text-slate-300 text-sm mb-6">फीस, प्रोजेक्ट और शर्तों से संबंधित किसी भी जानकारी के लिए सीधे संपर्क करें।</p>
+                    <a href="https://t.me/Pankaj_Bhardwaj_invest_No1" target="_blank" rel="noopener noreferrer"
+                       class="inline-flex items-center justify-center gap-3 px-8 py-4 bg-gradient-to-r from-amber-500 to-amber-400 text-slate-950 font-black text-sm rounded-xl shadow-xl shadow-amber-500/20 hover:scale-105 transition-all">
+                        <i class="fa-brands fa-telegram text-lg"></i>
+                        <span>CONTACT SUPPORT</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16 bg-slate-950">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-2xl font-black text-white mb-6 text-center">नियम एवं दिशानिर्देश (Work Guidelines)</h2>
+                <div class="bg-slate-900 border border-slate-800 rounded-3xl p-6 sm:p-8 space-y-6 text-slate-300 text-sm leading-relaxed">
+                    <div class="flex gap-4 items-start">
+                        <div class="w-8 h-8 rounded-full bg-amber-500/20 text-amber-400 flex items-center justify-center shrink-0 font-bold">1</div>
+                        <div>
+                            <h4 class="font-bold text-amber-400 text-base mb-1">प्लान्स का चयन</h4>
+                            <p>ऊपर सूचीबद्ध 5 प्रोजेक्ट प्लान्स में से अपनी समयावधि अनुसार किसी एक प्लान का चुनाव करें और बटन दबाकर टेलीग्राम पर संपर्क करें।</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4 items-start">
+                        <div class="w-8 h-8 rounded-full bg-amber-500/20 text-amber-400 flex items-center justify-center shrink-0 font-bold">2</div>
+                        <div>
+                            <h4 class="font-bold text-amber-400 text-base mb-1">रजिस्ट्रेशन फीस</h4>
+                            <p>प्रत्येक प्लान के अनुसार निर्दिष्ट रजिस्ट्रेशन फीस लागू होती है। सफलतापूर्वक फीस वेरिफिकेशन के बिना वर्क असाइनमेंट जारी नहीं किया जाएगा।</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4 items-start">
+                        <div class="w-8 h-8 rounded-full bg-amber-500/20 text-amber-400 flex items-center justify-center shrink-0 font-bold">3</div>
+                        <div>
+                            <h4 class="font-bold text-amber-400 text-base mb-1">60% एडवांस भुगतान</h4>
+                            <p>सफलतापूर्वक पंजीकरण की पुष्टि के तुरंत बाद 60% एडवांस राशि आपके दिए गए बैंक अकाउंट/UPI पर ट्रांसफर कर दी जाती है।</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-slate-950 border-t border-slate-800 text-slate-400 text-xs py-8 px-4 text-center">
+        <div class="max-w-7xl mx-auto space-y-2">
+            <div class="text-base font-black text-white">SCRIPTIFY<span class="text-amber-400">GLOBAL</span></div>
+            <p>© 2026 Scriptify Global. All Rights Reserved.</p>
+            <p class="text-[11px] text-slate-500">Official Direct Telegram: @Pankaj_Bhardwaj_invest_No1</p>
+        </div>
+    </footer>
 
 </body>
 </html>
